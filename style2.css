@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans", "Lucida Sans Unicode", Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  height: 100vh;
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3em;
+  margin-top: 3em;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* --------------TEXT BOXES-------------- */
+
+.textboxes {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 550px;
+  height: 550px;
+}
+
+.neu {
+  color: #050038;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 1px solid rgba(5, 0, 56, 0.2);
+  border-radius: 40px;
+  padding: 0.3em 1em;
+  margin-top: 0.7em;
+}
+
+.textboxes_head {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  font-weight: 900;
+  font-family: "Spoof", "sans-serif";
+  margin-top: 0.5em;
+}
+
+.textboxes_text {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Formular", sans-serif;
+  color: rgba(5, 0, 56, 0.6);
+  margin-top: 1em;
+}
+
+.info {
+  margin-top: 3em;
+}
+
+.info a {
+  color: #4262ff;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* ------------GRAFIK AND SEARCH----------- */
+
+.grafik {
+  background-image: url("https://images.ctfassets.net/w6r2i5d8q73s/bP0zfogHv44nGRmVs9qKz/727557239916a0e3472ea213ad352123/S_-_Flexible_licensing.png?fm=webp");
+}
+
+.search {
+  background-image: url("https://images.ctfassets.net/w6r2i5d8q73s/soxwnPT9M7mcMzt3JmxpS/8943beb54c736dcf57b9e4d8a9e9741e/S_-_Enterprise_Features.png?fm=webp");
+}
+
+.image {
+  grid-column: span 3;
+  background-image: url("https://images.ctfassets.net/w6r2i5d8q73s/bP0zfogHv44nGRmVs9qKz/727557239916a0e3472ea213ad352123/S_-_Flexible_licensing.png?fm=webp");
+  width: 550px;
+  height: 550px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
